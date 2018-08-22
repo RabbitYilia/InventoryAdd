@@ -1,0 +1,4119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CambridgeSoft.ChemScript14</name>
+    </assembly>
+    <members>
+        <member name="T:CambridgeSoft.ChemScript14.Atom">
+            
+            <summary>
+             <para>class of Atom</para>
+            <para></para>
+            <para></para>
+            <para>Users cannot create Atom objects directly.  Use StructureData.CreateAtom()</para>
+            <para>to create an Atom.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Atom.GetCartesian">
+            
+            <summary>
+             <para>Get the Cartesian coordinates of the atom.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Atom.SetCartesian(System.Double,System.Double,System.Double)">
+            
+            <summary>
+             <para>Sets the Cartesian coordinates for the atom</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Atom.SetCartesian(CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Sets the Cartesian coordinates for the atom</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.ID">
+            
+            <summary>
+             <para>Get the atom ID.  </para>
+            <para>NOTE: the ID is not necessarily the index in the StructureData</para>
+            <para>ID is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.Name">
+            
+            <summary>
+             <para>Get the atom Name.  </para>
+            <para>Name is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.Element">
+            
+            <summary>
+             <para>Get/Set the element symbol of the atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.FormalCharge">
+            
+            <summary>
+             <para>Get/Set the atom's formal charge</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.RadicalCode">
+            
+            <summary>
+             <para>Get/Set the atom's radical code:</para>
+            <para>0 - NONE</para>
+            <para>1 - SINGLET</para>
+            <para>2 - DOUBLET</para>
+            <para>3 - TRIPLET</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.CdxIdAsReadFromFile">
+            
+            <summary>
+             <para>The field CdxIdAsRead corresponds to the ID number of the atom in the CDX</para>
+            <para>or CDXML file that was read.  This field is undefined if the structure was</para>
+            <para>not read from a CDX(ML) file, or if the structure has been changed since</para>
+            <para>it was read from the file.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Atom.CdxIdAsWrittenToFile">
+            
+            <summary>
+             <para>The field CdxIdAsWrite corresponds to the ID number of the atom in the CDX</para>
+            <para>or CDXML file that was written.  This field is undefined if the structure</para>
+            <para>was not written to a CDX(ML) file, or if the structure has been changed</para>
+            <para>since it was written to the file.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.AtomAtomMap.AtomAtomMapEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.AtomList.AtomListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.AtomsMapVector.AtomsMapVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Bond">
+            
+            <summary>
+             <para>Class of Bond. </para>
+            <para>Users cannot create Bond object directly.  Use StructureData.CreateBond()</para>
+            <para>to create Bond</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Bond.OtherAtom(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>From one atom, get the other atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Bond.ExchangeAtoms">
+            
+            <summary>
+             <para>Exchange the identities of atom 1 and atom 2 in the bond.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondWild">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondSingle">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondDouble">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondTriple">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondQuadruple">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondDative">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondDelocalized">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.BondFlex">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.Length">
+            
+            <summary>
+             <para>Get the Length of the bond</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.Name">
+            
+            <summary>
+             <para>Get the bond display name, for example C(1)-N(12)</para>
+            <para>Name is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.Order">
+            
+            <summary>
+             <para>Get/Set the order of the bond</para>
+            <para>Order is READWRITE.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.GStereo">
+            
+            <summary>
+             <para>Get/Set the value of the graphical stereochemistry of the bond</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.ReactionStatus">
+            
+            <summary>
+             <para>Get reaction status.</para>
+            <para>Returned values explained as below:</para>
+            <para>None</para>
+            <para>Involved            - Involved in reaction center, but not made/broken nor order changed.</para>
+            <para>MadeOrBroken        - Made or broken</para>
+            <para>Changed             - Order changed</para>
+            <para>NotInCenter         - Not in reaction center</para>
+            <para>MadeBrokenOrChanged - Made or broken or changed</para>
+            <para>NotModified         - Not modified</para>
+            <para>Unmapped            - Not mapped</para>
+            <para>Check ReactionData::PerceiveReactionCenters() for example usage.</para>
+            <para>ReactionStatus is READONLY.</para>
+            <para>Check ReactionData::PerceiveReactionCenters() for example usage.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.OrderName">
+            
+            <summary>
+             <para>Get order name of the bond</para>
+            <para>OrderName is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.OrderSymbol">
+            
+            <summary>
+             <para>Get order symbol of the bond</para>
+            <para>OrderSymbol is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.GStereoName">
+            
+            <summary>
+             <para>Get GStereoName of the bond</para>
+            <para>GStereoName is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.CdxIdAsReadFromFile">
+            
+            <summary>
+             <para>The field CdxIdAsRead corresponds to the ID number of the atom in the CDX</para>
+            <para>or CDXML file that was read.  This field is undefined if the structure was</para>
+            <para>not read from a CDX(ML) file, or if the structure has been changed since</para>
+            <para>it was read from the file.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Bond.CdxIdAsWrittenToFile">
+            
+            <summary>
+             <para>The field CdxIdAsWrite corresponds to the ID number of the atom in the CDX</para>
+            <para>or CDXML file that was written.  This field is undefined if the structure</para>
+            <para>was not written to a CDX(ML) file, or if the structure has been changed</para>
+            <para>since it was written to the file.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondBondMap.BondBondMapEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondCode">
+            
+            <summary>
+             <para>@file </para>
+            <para>similar with ccBondCode</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondGStereo">
+            
+            <summary>
+             <para>class of BondGStereo. </para>
+            <para>structure to hold GStereoCode information.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.BondGStereo.Name">
+            
+            <summary>
+             <para>name of BondGStereo</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.BondGStereo.GStereoCode">
+            
+            <summary>
+             <para>GStereoCode of BondGStereo</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondList.BondListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondOrder">
+            
+            <summary>
+             <para>struct of BondOrder. </para>
+            <para>structure to hold bond order information.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.BondsMapVector.BondsMapVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.LoadFile(System.String,System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.LoadFile(System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.LoadData(System.String,System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.LoadData(System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.WriteData(System.String,System.Boolean)">
+            
+            <summary>
+             <para>Write StructureData into a string with file format indicated by *format*.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.WriteData(System.String)">
+            
+            <summary>
+             <para>Write StructureData into a string with file format indicated by *format*.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.WriteFile(System.String,System.String)">
+            
+            <summary>
+             <para>Write StructureData or Reaction into a file with file format indicated by *format*.</para>
+            <para>If *format* is not specified, the file extension is used.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.WriteFile(System.String)">
+            
+            <summary>
+             <para>Write StructureData or Reaction into a file with file format indicated by *format*.</para>
+            <para>If *format* is not specified, the file extension is used.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.Formula(System.Boolean)">
+            
+            <summary>
+             <para>Return the mol's formula</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.Formula">
+            
+            <summary>
+             <para>Return the mol's formula</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.CanonicalCode(System.Int32,System.Int32)">
+            
+            <summary>
+             <para>Return the canonical code</para>
+            <para>NOTE: currently we only support version = 0 and mode = 0</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.CanonicalCode(System.Int32)">
+            
+            <summary>
+             <para>Return the canonical code</para>
+            <para>NOTE: currently we only support version = 0 and mode = 0</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.CanonicalCode">
+            
+            <summary>
+             <para>Return the canonical code</para>
+            <para>NOTE: currently we only support version = 0 and mode = 0</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.Clear">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.NormalizeStructure(CambridgeSoft.ChemScript14.NormOptions,System.Int32)">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.NormalizeStructure(CambridgeSoft.ChemScript14.NormOptions)">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.NormalizeStructure">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.MimeTypes">
+            
+            <summary>
+             <para>Get MimeTypes</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.ContainsSubstructure(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Test whether "dest" is a substructure of this StructureData.</para>
+            <para>If you want atom-by-atom map, you should use SearchQuery.AtomByAtomSearch(...)</para>
+            <para>NOTE: in most cases one should call NormalizeStructure() prior to</para>
+            <para>calling ContainsSubstructure().  Not doing this may result in cases where</para>
+            <para>substructure searches do not match expected results.</para>
+            <para>Arguments: dest - destination StructureData</para>
+            <para>timeout - total timeout, in milliseconds; "0" means no timeout</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.ContainsSubstructure(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Test whether "dest" is a substructure of this StructureData.</para>
+            <para>If you want atom-by-atom map, you should use SearchQuery.AtomByAtomSearch(...)</para>
+            <para>NOTE: in most cases one should call NormalizeStructure() prior to</para>
+            <para>calling ContainsSubstructure().  Not doing this may result in cases where</para>
+            <para>substructure searches do not match expected results.</para>
+            <para>Arguments: dest - destination StructureData</para>
+            <para>timeout - total timeout, in milliseconds; "0" means no timeout</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.CreateSearchQuery(CambridgeSoft.ChemScript14.SearchOptions)">
+            
+            <summary>
+             <para>create a SearchQuery object.  When searching a large database, you'd better create a SearchQuery </para>
+            <para>then use the SearchQuery to search the database.  AtomByAtomSearch() has lower efficiency.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.CreateSearchQuery">
+            
+            <summary>
+             <para>create a SearchQuery object.  When searching a large database, you'd better create a SearchQuery </para>
+            <para>then use the SearchQuery to search the database.  AtomByAtomSearch() has lower efficiency.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.Tanimoto(CambridgeSoft.ChemScript14.ChemicalData)">
+            
+            <summary>
+             <para>Find the Tanimoto coefficient between two molecules.</para>
+            <para>Arguments: target - target StructureData</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.SetDataItem(System.String,System.String)">
+            
+            <summary>
+             <para>Set a customized property</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.GetDataItem(System.String)">
+            
+            <summary>
+             <para>Get a customized property by its name</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.GetDataItems">
+            
+            <summary>
+             <para>Get all customized string properties as a Dict</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.RemoveDataItem(System.String)">
+            
+            <summary>
+             <para>Delete a customized property</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.ClearDataItems">
+            
+            <summary>
+             <para>Delete all the customized properties</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.AtomByAtomSearch(CambridgeSoft.ChemScript14.ChemicalData,CambridgeSoft.ChemScript14.SearchOptions)">
+            
+            <summary>
+             <para>List all atom-by-atom dict from this StructureData to "target" StructureData.</para>
+            <para>If no dict found, None is returned, else a list of all maps is returned.</para>
+            <para>Arguments: target - target StructureData</para>
+            <para>options.maxHitCount - the maximum hit count.  "0" means returns all hits</para>
+            <para>options.timeout - total timeout, in milliseconds; "0" means no timeout</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ChemicalData.AtomByAtomSearch(CambridgeSoft.ChemScript14.ChemicalData)">
+            
+            <summary>
+             <para>List all atom-by-atom dict from this StructureData to "target" StructureData.</para>
+            <para>If no dict found, None is returned, else a list of all maps is returned.</para>
+            <para>Arguments: target - target StructureData</para>
+            <para>options.maxHitCount - the maximum hit count.  "0" means returns all hits</para>
+            <para>options.timeout - total timeout, in milliseconds; "0" means no timeout</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ChemicalData.FormulaHTML">
+            
+            <summary>
+             <para>Return the mol's HTML formula</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ChemicalData.IsEmpty">
+            
+            <summary>
+             <para>Get IsEmpty</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ChemicalData.ID">
+            
+            <summary>
+             <para>Get/Set ID</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ChemicalData.Smiles">
+            
+            <summary>
+             <para>Get Smiles</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.CombiChem">
+            
+            <summary>
+             <para>CombiChem is a utility class that provides functionality for</para>
+            <para>combinatorial chemisty enumeration.  </para>
+            <para>A generic reaction is provided for the enumeration during construction.  </para>
+            <para>Candidate structures can be associated with each of the reactants, and</para>
+            <para>the results can then be enumerated using this class.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.#ctor(CambridgeSoft.ChemScript14.ReactionData)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.GenericReaction">
+            
+            <summary>
+             <para>Get the generic reaction.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.GenericComponents">
+            
+            <summary>
+             <para>Get a list of the indices of all the components of the reaction</para>
+            <para>for which candidates may be set.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.SetCandidate(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Add another candidate structure to be associated with the specified</para>
+            <para>generic reactant.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.SetCandidates(CambridgeSoft.ChemScript14.StructureDataList,System.Int32)">
+            
+            <summary>
+             <para>Add a list of candidate structures to be associated with the specified</para>
+            <para>generic reactants.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.NumberOfCandidates(System.Int32)">
+            
+            <summary>
+             <para>Get the number of candidates for a given component.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.ReactiveOrientations(System.Int32,System.Int32)">
+            
+            <summary>
+             <para>Get reactive orientations for a given candidate for a given component.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.DeleteReactiveOrientation(System.Int32,System.Int32,System.Int32)">
+            
+            <summary>
+             <para>Remove given reactive orientation from consideration in the enumeration.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.Permutations">
+            
+            <summary>
+             <para>Get a list of the all of the reaction permutations.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.PermutationCandidateIndices(System.Int32)">
+            
+            <summary>
+             <para>Get the indices of the candidates contributing to the given reaction permutation.</para>
+            <para>This array parallels GenericComponents.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.BeginEnum">
+            
+            <summary>
+             <para>Begin the manual enumeration process - this should be followed by</para>
+            <para>calls to EnumNext() to enumerate the perumatations one by one.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.CombiChem.EnumNext">
+            
+            <summary>
+             <para>Enumerate the next permutation during the manual enumeration process.</para>
+            <para>This returns null when the enumeration is finished.</para>
+            <para>BeginEnum() must be called before the first call of EnumNext().</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.CombiChem.NumberOfPermutations">
+            
+            <summary>
+             <para>Get the number of reaction permutations.</para>
+            <para>NumberOfPermutations is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Dictionary_Atom_String.Dictionary_Atom_StringEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Dictionary_Bond_String.Dictionary_Bond_StringEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Dictionary_String_Double.Dictionary_String_DoubleEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Dictionary_String_String.Dictionary_String_StringEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Dictionary_StructureData_int.Dictionary_StructureData_intEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.DoubleList.DoubleListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Element">
+            
+            <summary>
+             <para>Class of Element. </para>
+            <para></para>
+            <para></para>
+            <para>Users cannot create Element object directly.  </para>
+            <para>Use PeriodicTable.GetElement() to get an Element object.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Element.Isotopes">
+            
+            <summary>
+             <para>Get Isotopes of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.AverageMass">
+            
+            <summary>
+             <para>Get AverageMass of Element, at natural abundance.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.ExactMass">
+            
+            <summary>
+             <para>Get ExactMass of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.CommonIsotope">
+            
+            <summary>
+             <para>Get CommonIsotope of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.AtomicNumber">
+            
+            <summary>
+             <para>Get AtomicNumber of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.IsotopeMassNumber">
+            
+            <summary>
+             <para>Get IsotopeMassNumber of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.Symbol">
+            
+            <summary>
+             <para>Get Symbol of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.FullName">
+            
+            <summary>
+             <para>Get FullName of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.Density">
+            
+            <summary>
+             <para>Get Density of Element, unit: g/ml</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.MP">
+            
+            <summary>
+             <para>Get MP of Element, unit: Celsius</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.BP">
+            
+            <summary>
+             <para>Get BP of Element, unit: Celsius</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.IP">
+            
+            <summary>
+             <para>Get IP of Element, unit: kJ/mol</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.Electronegativity">
+            
+            <summary>
+             <para>Get Electronegativity of Element, unit is "Pauling"</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.Radius">
+            
+            <summary>
+             <para>Get Radius of Element, unit: Angstroms</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Element.DiscoveredBy">
+            
+            <summary>
+             <para>Get DiscoveredBy of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.SetThrowExceptions(System.Boolean)">
+            
+            <summary>
+             <para>Python example:</para>
+            <para>>>> Environment.SetThrowExceptions(True)</para>
+            <para>>>> try:</para>
+            <para>...     m = StructureData()</para>
+            <para>...     m.ReadFile('notExistingFile.ext')</para>
+            <para>... except Exception, e:</para>
+            <para>...     print(e)</para>
+            <para></para>
+            <para>*</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.GetThrowExceptions">
+            
+            <summary>
+             <para>Python example:</para>
+            <para>>>> Environment.GetThrowExceptions()</para>
+            <para></para>
+            <para>*</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.SetVerbosity(System.Boolean)">
+            
+            <summary>
+             <para>Python example:</para>
+            <para>>>> Environment.SetVerbosity(True)</para>
+            <para></para>
+            <para>*</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.GetVerbosity">
+            
+            <summary>
+             <para>Python example:</para>
+            <para>>>> Environment.GetVerbosity()</para>
+            <para></para>
+            <para>*</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.Activate">
+            
+            <summary>
+             <para>Activate ChemScript</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.SetDisableInterpretationOfPerspectiveStereochemistry(System.Boolean)">
+            
+            <summary>
+             <para>When TRUE, this property disables the interpretation of perspective in 2D diagrams as an indicator of 3D</para>
+            <para>stereochemistry. The default value is FALSE; i.e. perspective in a 2D diagram by default will be interpreted as an</para>
+            <para>indicator of 3D stereochemistry.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.GetDisableInterpretationOfPerspectiveStereochemistry">
+            
+            <summary>
+             <para>When TRUE, this property disables the interpretation of perspective in 2D diagrams as an indicator of 3D</para>
+            <para>stereochemistry. The default value is FALSE; i.e. perspective in a 2D diagram by default will be interpreted as an</para>
+            <para>indicator of 3D stereochemistry.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.Version">
+            
+            <summary>
+             <para>Get ChemScript version string</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.SetNameToStructureOptions(CambridgeSoft.ChemScript14.NameToStructureOptions)">
+            
+            <summary>
+             <para>Set name to structure options</para>
+            <para>Default is true</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Environment.GetNameToStructureOptions">
+            
+            <summary>
+             <para>Get name to structure options</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.GStereoCode">
+            
+            <summary>
+             <para>similar with ccGStereoCode_stereo</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.IntVector.IntVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Isotope">
+            
+            <summary>
+             <para>Class of Isotope. </para>
+            <para></para>
+            <para></para>
+            <para>Users cannot create Isotope object directly.  </para>
+            <para>Use Element.CommonIsotope() to get an Isotope object.</para>
+            <para>Or use Element.Isotopes() to get a list of Isotope objects.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.IsotopeList.IsotopeListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.LargestCommonSubstructure">
+            
+            <summary>
+             <para>Class of most common structure</para>
+            <para></para>
+            <para></para>
+            <para>You cannot create LargestCommonSubstructure object directly.  </para>
+            <para>LargestCommonSubstructure.Compute(...) returns an LargestCommonSubstructure object</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.LargestCommonSubstructure.CommonSubstructure">
+            
+            <summary>
+             <para>Get most common structure as a separated StructureData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.LargestCommonSubstructure.Compute(CambridgeSoft.ChemScript14.StructureData,CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Find the maximum common sub-graph between structure1 and structure2</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.LargestCommonSubstructure.Compute(CambridgeSoft.ChemScript14.StructureData,CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Find the maximum common sub-graph between structure1 and structure2</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.NameToStructureOptions">
+            
+            <summary>
+             <para>Class of NameToStructureOptions. </para>
+            <para></para>
+            <para></para>
+            <para>This class is used to set the options which are used by NameToStruct, such as "stop words" flag</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.NameToStructureOptions.#ctor">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.NameToStructureOptions.GetTreatingStopwords">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.NameToStructureOptions.SetTreatingStopwords(System.Boolean)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:CambridgeSoft.ChemScript14.NormOptions" -->
+        <member name="M:CambridgeSoft.ChemScript14.NormOptions.#ctor">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.NormOptions.List">
+            
+            <summary>
+             <para>List all flags</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.NormOptions.ToString">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveRTable">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveRxnCenters">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveTextAtoms">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.ProvideMissingCoords">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveValence">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveIsotopy">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.AnonList">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.Delrep">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveNonGraphStereo">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveWedge">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.StripEitherDoubleBond">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.StripEitherSingleBond">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.RemoveLabel">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.Thiazole">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.Dekekulize">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.Azide">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.MergeCharges">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.CollapseZwitterion">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.FeaturelessHydrogens">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.Dative">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.DativeToDouble">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.MoveChargeFromCarbon">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.CleaveIntoSalts">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.NormOptions.MergeMetalSalts">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.PeriodicTable.ElementCount">
+            
+            <summary>
+             <para>Get the count of Element</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.PeriodicTable.GetElement(System.Int32)">
+            
+            <summary>
+             <para>Get Element with the atomic No</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Get Element with the symbol</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.PeriodicTable.GetElement(System.String)">
+            
+            <summary>
+             <para>Get Element with the atomic No</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Get Element with the symbol</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.Point">
+            
+            <summary>
+             <para>Divide x, y and z by scale factor s</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.XYZ">
+            
+            <summary>
+             <para>Divide x, y and z by scale factor s</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.XYZ.#ctor(System.Double,System.Double,System.Double)">
+            
+            <summary>
+             <para>Constructor of class XYZ.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.XYZ.#ctor(System.Double,System.Double)">
+            
+            <summary>
+             <para>Constructor of class XYZ.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.XYZ.#ctor(System.Double)">
+            
+            <summary>
+             <para>Constructor of class XYZ.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.XYZ.#ctor">
+            
+            <summary>
+             <para>Constructor of class XYZ.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.XYZ.x">
+            
+            <summary>
+             <para>x coordinate</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.XYZ.y">
+            
+            <summary>
+             <para>y coordinate</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.XYZ.z">
+            
+            <summary>
+             <para>z coordinate</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.#ctor(CambridgeSoft.ChemScript14.XYZ)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.#ctor(System.Double,System.Double,System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.#ctor(System.Double,System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.#ctor(System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.#ctor">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.DistanceTo(CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute the distance from this point to another point "p"</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.DistanceToLine(CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute the perpendicular distance to a line.  The line is defined by two endpoints.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.DistanceToPlane(CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute the perpendicular distance to a plane.  The plane is defined by three points.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.Angle(CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute the angle defined by three points (in degrees)</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.DihedralAngle(CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute the dihedral angle between two planes.  The two planes are: p1--axis1--axis2, axis1--axis2--p2.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Point.ToVector">
+            
+            <summary>
+             <para>Create a Vector</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.RDFileReader">
+            
+            <summary>
+             <para>class for reading MDL SD file</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.OpenFile(System.String)">
+            
+            <summary>
+             <para>Entry of creating RDFileReader.  Usage:</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.Eof">
+            
+            <summary>
+             <para>Check if reaching the end of the file</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.ReadNext">
+            
+            <summary>
+             <para>Read next ReactionData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.Current">
+            
+            <summary>
+             <para>get the structure of the last ReadNext()</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.ResetReading">
+            
+            <summary>
+             <para>Reset reading, so next ReadNext() call will get the first ReactionData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileReader.Close">
+            
+            <summary>
+             <para>Close</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.RDFileReader.Count">
+            
+            <summary>
+             <para>Get the number of reactions pending of reading in the file</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.RDFileReader.PercentComplete">
+            
+            <summary>
+             <para>Get the read percentage of the file</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.RDFileReader.NumberOfRecordsRead">
+            
+            <summary>
+             <para>Get the number of reactions read from the file</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.RDFileWriter">
+            
+            <summary>
+             <para>SDFileWriter class</para>
+            <para></para>
+            <para></para>
+            <para>Users cannot create RDFileWriter objects directly.  Use RDFileWriter.OpenFile()</para>
+            <para>to create an RDFileWriter.</para>
+            <para></para>
+            <para></para>
+            <para>class for writing MDL RD file</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.OpenFile(System.String,CambridgeSoft.ChemScript14.FileOpenMode)">
+            
+            <summary>
+             <para>Entry of RDFileWriter. </para>
+            <para>You can explicitly set mode to Append if you want to append to existing file.</para>
+            <para>It is set to Create by default.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.OpenFile(System.String)">
+            
+            <summary>
+             <para>Entry of RDFileWriter. </para>
+            <para>You can explicitly set mode to Append if you want to append to existing file.</para>
+            <para>It is set to Create by default.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.WriteReaction(CambridgeSoft.ChemScript14.ReactionData,System.String)">
+            
+            <summary>
+             <para>Write a Reaction</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.WriteReaction(CambridgeSoft.ChemScript14.ReactionData)">
+            
+            <summary>
+             <para>Write a Reaction</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.WriteReactions(CambridgeSoft.ChemScript14.ReactionDataList,System.String)">
+            
+            <summary>
+             <para>Write many Reactions in one time</para>
+            <para>Return the number of reactions (ReactionData) written.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.WriteReactions(CambridgeSoft.ChemScript14.ReactionDataList)">
+            
+            <summary>
+             <para>Write many Reactions in one time</para>
+            <para>Return the number of reactions (ReactionData) written.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RDFileWriter.Close">
+            
+            <summary>
+             <para>Close</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.ReactionData">
+            
+            <summary>
+             <para>Class of manipulating chemical reactions.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.#ctor">
+            
+            <summary>
+             <para>Constructor of ReactionData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.LoadFile(System.String,System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.LoadFile(System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.LoadData(System.String,System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.LoadData(System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReadFile(System.String,System.String)">
+            
+            <summary>
+             <para>Loads a file into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReadFile(System.String)">
+            
+            <summary>
+             <para>Loads a file into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReadData(System.String,System.String)">
+            
+            <summary>
+             <para>Reads string data into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReadData(System.String)">
+            
+            <summary>
+             <para>Reads string data into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.Clear">
+            
+            <summary>
+             <para>Remove everything from this object</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.Clone">
+            
+            <summary>
+             <para>Get a clone of this mol</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.AppendStep(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Append a new step.  For example,  A -> B ( -> C)</para>
+            <para>If the new products is composed with two StructureData, use StructureData.JoinFragments() to create a new StructureData first.</para>
+            <para>>>> r = ReactionData.LoadData('CCC=C>>CCC.CN')</para>
+            <para>>>> s = StructureData.LoadData('CCC.CO')</para>
+            <para>>>> r.AppendStep(s)</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.Layout">
+            
+            <summary>
+             <para>Layout the reaction to make it look nicer.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.Transform(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Use reaction template to transform this *m* to get another new StructureData.</para>
+            <para>To get the new reaction, call ReactionData.Create(m, new_m)</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.PerceiveReactionCenters">
+            
+            <summary>
+             <para>Perceive reaction centers; Status can then be found in Bond.ReactionStatus.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.CreateReaction(CambridgeSoft.ChemScript14.StructureData,CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Create a reaction.</para>
+            <para>"reactants" and "products" may each contain more than one fragment.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionAtomMap(System.Int32,System.Boolean)">
+            
+            <summary>
+             <para>Atom-By-Atom Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionAtomMap(System.Int32)">
+            
+            <summary>
+             <para>Atom-By-Atom Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionAtomMap">
+            
+            <summary>
+             <para>Atom-By-Atom Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionBondMap(System.Int32,System.Boolean)">
+            
+            <summary>
+             <para>Bond-By-Bond Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionBondMap(System.Int32)">
+            
+            <summary>
+             <para>Bond-By-Bond Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionData.ReactionBondMap">
+            
+            <summary>
+             <para>Bond-By-Bond Map reactants to products</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionData.Reactants">
+            
+            <summary>
+             <para>Get reactants as StructureData list.</para>
+            <para>A reactant is a component that does not participate as a product in any step.</para>
+            <para>For single-step reactions, this function returns the 'obvious' reactants.</para>
+            <para>For multi-step reactions, this function returns the reactants of the first step.</para>
+            <para>For convergent reactions, this function returns a combined list of</para>
+            <para>all reactants in all initiating steps.</para>
+            <para>For cyclic reactions, this function returns an empty list.</para>
+            <para>The reactants returned by this function are references to those in the original</para>
+            <para>reaction.  Changes to the items returned by this function will be reflected in</para>
+            <para>the original reaction, although changes to the list itself (adding or removing entire</para>
+            <para>members of the list) will not be reflected in the original reaction.</para>
+            <para>The three functions Reactants(), Products(), and Intermediates() produce non-overlapping lists of Mols.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionData.Products">
+            
+            <summary>
+             <para>Get products as StructureData list.</para>
+            <para>A product is a component that does not participate as a reactant in any step.</para>
+            <para>For single-step reactions, this function returns the 'obvious' products.</para>
+            <para>For multi-step reactions, this function returns the products of the last step.</para>
+            <para>For convergent reactions, this function returns a combined list of</para>
+            <para>all products in all terminating steps.</para>
+            <para>For cyclic reactions, this function returns an empty list.</para>
+            <para>The products returned by this function are references to those in the original</para>
+            <para>reaction.  Changes to the items returned by this function will be reflected in</para>
+            <para>the original reaction, although changes to the list itself (adding or removing entire</para>
+            <para>members of the list) will not be reflected in the original reaction.</para>
+            <para>The three functions Reactants(), Products(), and Intermediates() produce non-overlapping lists of Mols.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionData.Components">
+            
+            <summary>
+             <para>Get all components of the reaction as StructureData list.</para>
+            <para>The components returned by this function are references to those in the original</para>
+            <para>reaction.  Changes to the items returned by this function will be reflected in</para>
+            <para>the original reaction, although changes to the list itself (adding or removing entire</para>
+            <para>members of the list) will not be reflected in the original reaction.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionData.Intermediates">
+            
+            <summary>
+             <para>Get intermediates as StructureData list.</para>
+            <para>An intermediate is a component that participates as a product in one step and as a reactant in another.</para>
+            <para>For single-step reactions, this function returns an empty list.</para>
+            <para>For multi-step reactions and convergent reactions, this function returns a combined list of</para>
+            <para>everything that is not an initiating or terminating molecule.</para>
+            <para>For cyclic reactions, this function returns every component in the reaction.</para>
+            <para>The intermediates returned by this function are references to those in the original</para>
+            <para>reaction.  Changes to the items returned by this function will be reflected in</para>
+            <para>the original reaction, although changes to the list itself (adding or removing entire</para>
+            <para>members of the list) will not be reflected in the original reaction.</para>
+            <para>The three functions Reactants(), Products(), and Intermediates() produce non-overlapping lists of Mols.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionData.Steps">
+            
+            <summary>
+             <para>Get multi-step reaction as a list of single-step ReactionStep objects.</para>
+            <para>For example, A -> B -> C  returns  A -> B, B -> C, for a total of 2 steps.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.ReactionDataList.ReactionDataListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionStep.Formula(System.Boolean)">
+            
+            <summary>
+             <para>Return the step's formula</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.ReactionStep.Formula">
+            
+            <summary>
+             <para>Return the step's formula</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionStep.Reactants">
+            
+            <summary>
+             <para>Get all reactants as a list</para>
+            <para>Reactants is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionStep.Products">
+            
+            <summary>
+             <para>Get all products as a list</para>
+            <para>Products is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.ReactionStep.FormulaHTML">
+            
+            <summary>
+             <para>Return the step's formula with HTML markup</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.ReactionStepList.ReactionStepListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Ring.Atoms">
+            
+            <summary>
+             <para>Get all ring atoms as a list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Ring.Bonds">
+            
+            <summary>
+             <para>Get all ring bonds as a list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.RingInfo">
+            
+            <summary>
+             <para>Class of ring information of a StructureData</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.#ctor(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.FundamentalRings">
+            
+            <summary>
+             <para>get fundamental rings as a Ring list</para>
+            <para>Fundamental, or SSSR (smallest set of smallest rings).  Represents a linear</para>
+            <para>basis set, from which all other rings can be generated (by XOR'ing the bonds).</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.ExtendedRings">
+            
+            <summary>
+             <para>get extended rings as a Ring list</para>
+            <para>Extended, aka "kappa".  These are rings that could as validly have been selected</para>
+            <para>for the SSSR, and have the same size as the largest SSSR ring(s).  For example,	</para>
+            <para>Bicyclo[2.2.2]octane has three rings but is bicyclic.  Which two go into the	</para>
+            <para>SSSR is an arbitrary choice.  The third goes into the extended set.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.BasicRings">
+            
+            <summary>
+             <para>get basic rings as a Ring list</para>
+            <para>"Basic" rings are the fundamental plus the extended.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.NecklaceRings">
+            
+            <summary>
+             <para>get complex rings as a Ring list.</para>
+            <para>A necklace ring is a ring that bridges at least one ring less than half its</para>
+            <para>size.  We suppress the extended and composite rings of necklace rings of size</para>
+            <para>greater than fifteen (arbitrary)</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.BridgedRings">
+            
+            <summary>
+             <para>get bridged rings as a Ring list</para>
+            <para>Bridging rings are basic rings that share more than one bond with another basic ring.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.AromaticRings">
+            
+            <summary>
+             <para>get aromatic rings as a Ring list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.SpiroAtoms">
+            
+            <summary>
+             <para>get spiro atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.FusionAtoms">
+            
+            <summary>
+             <para>get fusion atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.BridgeAtoms">
+            
+            <summary>
+             <para>get bridge atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.BridgeheadAtoms">
+            
+            <summary>
+             <para>get bridgehead atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.HydrogenAcceptorAtoms">
+            
+            <summary>
+             <para>get hydrogen-acceptor atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.HydrogenDonorAtoms">
+            
+            <summary>
+             <para>get hydrogen-donor atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.FusionBonds">
+            
+            <summary>
+             <para>get fusion bonds as a Bond list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.RingInfo.BridgeBonds">
+            
+            <summary>
+             <para>get bridge bonds as a Bond list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.RingInfo.AtomsWithVacantPiOrbitals">
+            
+            <summary>
+             <para>get atoms with vacant Pi orbitals as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.RingInfo.LonePairAtoms">
+            
+            <summary>
+             <para>get lone pair atoms as an Atom list</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.RingInfoList.RingInfoListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.RingList.RingListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.SaltTable">
+            
+            <summary>
+             <para>Provide a customized way when do StructureData.SplitSalt().</para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.#ctor(System.Boolean,System.Int32)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.#ctor(System.Boolean)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.#ctor">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterFragment(CambridgeSoft.ChemScript14.StructureData,System.Boolean,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a StructureData object</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterFragment(CambridgeSoft.ChemScript14.StructureData,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a StructureData object</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterFragment(CambridgeSoft.ChemScript14.StructureData,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a StructureData object</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterFragment(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a StructureData object</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.ClearFragmentList">
+            
+            <summary>
+             <para>Clear all salt/solvent fragments registered on this salt table</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.PrimeWithCommonOrganicFragments">
+            
+            <summary>
+             <para>Register the default salt/solvent fragments</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmiles(System.String,System.Boolean,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a SMILES string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmiles(System.String,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a SMILES string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmiles(System.String,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a SMILES string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmiles(System.String)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by a SMILES string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterInchi(System.String,System.Boolean,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by an InChI string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterInchi(System.String,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by an InChI string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterInchi(System.String,System.Boolean)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by an InChI string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterInchi(System.String)">
+            
+            <summary>
+             <para>Registry a new salt/solvent fragment defined by an InChI string</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmilesFile(System.String,System.Boolean)">
+            
+            <summary>
+             <para>Registry salt/solvent fragments defined by a SMILES file.</para>
+            <para>A sample salt table File:</para>
+            <para>---------------------------------------</para>
+            <para># my salts</para>
+            <para>O=S(C1=CC=CC=C1)([O-])=O</para>
+            <para>O=C(CC(C(C)1C)CC2)C21CS(=O)([O-])=O</para>
+            <para>CCCCCC([O-])=O</para>
+            <para># other salts</para>
+            <para>O=S(C1=CC=C(Cl)C=C1)([O-])=O</para>
+            <para>O=C(C1(CC2)C=CC2(C)CC1)[O-]</para>
+            <para>O=C([O-])CCC1CCCC1</para>
+            <para>---------------------------------------</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RegisterWithSmilesFile(System.String)">
+            
+            <summary>
+             <para>Registry salt/solvent fragments defined by a SMILES file.</para>
+            <para>A sample salt table File:</para>
+            <para>---------------------------------------</para>
+            <para># my salts</para>
+            <para>O=S(C1=CC=CC=C1)([O-])=O</para>
+            <para>O=C(CC(C(C)1C)CC2)C21CS(=O)([O-])=O</para>
+            <para>CCCCCC([O-])=O</para>
+            <para># other salts</para>
+            <para>O=S(C1=CC=C(Cl)C=C1)([O-])=O</para>
+            <para>O=C(C1(CC2)C=CC2(C)CC1)[O-]</para>
+            <para>O=C([O-])CCC1CCCC1</para>
+            <para>---------------------------------------</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.Clear">
+            
+            <summary>
+             <para>Clear all salt/solvent fragments registered on this salt table</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.LoadDefault">
+            
+            <summary>
+             <para>Register the default salt/solvent fragments</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RemoveSaltsAndSolvents(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Remove salts and solvents, and returns the main structure</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.RemoveSaltsAndSolvents(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Remove salts and solvents, and returns the main structure</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.SplitSaltsAndSolvents(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Split salts and solvents, and returns a List containing main structure, separated single salts and solvents</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.SplitSaltsAndSolvents(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Split salts and solvents, and returns a List containing main structure, separated single salts and solvents</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.SplitSaltAndSolvent(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Split salts and solvents, and returns a Dict containing main structure, combined salt and solvent</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.SplitSaltAndSolvent(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Split salts and solvents, and returns a Dict containing main structure, combined salt and solvent</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.All">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.Salts">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.Solvents">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.ListAll">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.ListSalts">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SaltTable.ListSolvents">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.SDFileReader">
+            
+            <summary>
+             <para>class for reading MDL SD file</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.OpenFile(System.String)">
+            
+            <summary>
+             <para>Entry of creating SDFileReader.  Usage:</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.Eof">
+            
+            <summary>
+             <para>Check if reaching the end of the file</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.ReadNext">
+            
+            <summary>
+             <para>Read next StructureData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.Current">
+            
+            <summary>
+             <para>get the structure of the last ReadNext()</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.ResetReading">
+            
+            <summary>
+             <para>Reset reading, so next ReadNext() call will get the first StructureData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileReader.Close">
+            
+            <summary>
+             <para>Close</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.SDFileReader.Count">
+            
+            <summary>
+             <para>Get the number of structures pending of reading in the file</para>
+            <para>Count is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.SDFileReader.PercentComplete">
+            
+            <summary>
+             <para>Get the read percentage of the file</para>
+            <para>PercentComplete is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.SDFileReader.NumberOfRecordsRead">
+            
+            <summary>
+             <para>Get the number of molecules read from the file</para>
+            <para>NumberOfRecordsRead is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.SDFileReader.LastReadMimeType">
+            
+            <summary>
+             <para>Get the mime type of last read record.</para>
+            <para>Return empty string if no record read or the mime type is unknown</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.SDFileWriter">
+            
+            <summary>
+             <para>SDFileWriter class</para>
+            <para></para>
+            <para></para>
+            <para>Users cannot create SDFileWriter objects directly.  Use SDFileWriter.OpenFile()</para>
+            <para>to create an SDFileWriter.</para>
+            <para></para>
+            <para></para>
+            <para>class for writing MDL SD file</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.OpenFile(System.String,CambridgeSoft.ChemScript14.FileOpenMode,System.String)">
+            
+            <summary>
+             <para>Constructor of SDFileWriter.</para>
+            <para>You can explicitly set mode to Append if you want to append to existing file.</para>
+            <para>It is set to Create by default.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.OpenFile(System.String,CambridgeSoft.ChemScript14.FileOpenMode)">
+            
+            <summary>
+             <para>Constructor of SDFileWriter.</para>
+            <para>You can explicitly set mode to Append if you want to append to existing file.</para>
+            <para>It is set to Create by default.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.OpenFile(System.String)">
+            
+            <summary>
+             <para>Constructor of SDFileWriter.</para>
+            <para>You can explicitly set mode to Append if you want to append to existing file.</para>
+            <para>It is set to Create by default.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.WriteStructure(CambridgeSoft.ChemScript14.StructureData,System.String)">
+            
+            <summary>
+             <para>Write a Structure</para>
+            <para>mimeType - default value is empty string which will write structure into v2000 format</para>
+            <para>This mimeType will overwrite the OpenFile option.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.WriteStructure(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Write a Structure</para>
+            <para>mimeType - default value is empty string which will write structure into v2000 format</para>
+            <para>This mimeType will overwrite the OpenFile option.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.WriteStructures(CambridgeSoft.ChemScript14.StructureDataList,System.String)">
+            
+            <summary>
+             <para>Write many Structures in one time.</para>
+            <para>Return the number of molecules (StructureData) written.</para>
+            <para>mimeType - default value is empty string which will write structure into v2000 format</para>
+            <para>This mimeType will overwrite the OpenFile option.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.WriteStructures(CambridgeSoft.ChemScript14.StructureDataList)">
+            
+            <summary>
+             <para>Write many Structures in one time.</para>
+            <para>Return the number of molecules (StructureData) written.</para>
+            <para>mimeType - default value is empty string which will write structure into v2000 format</para>
+            <para>This mimeType will overwrite the OpenFile option.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SDFileWriter.Close">
+            
+            <summary>
+             <para>Close</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.SearchOptions">
+            
+            <summary>
+             <para>class of Atom-By-Atom Search Options:</para>
+            <para></para>
+            <para> </para>
+            <para>Option                    Meanings</para>
+            <para>----------------------------------------------------------------------------</para>
+            <para>_3D                      : 3-D search mode.</para>
+            <para>absHitsRelative          : If set, in non-Identity/Rel.Tet.Ster mode, an</para>
+            <para>: abs.wedge hits a rel.wedge or hashed.  Does not</para>
+            <para>: affect other modes.</para>
+            <para>doubleBondStereo         : Includes the configuration of the double bond.</para>
+            <para>: The allowed values are: Same or Any.</para>
+            <para>: Same: match the target structure exactly.</para>
+            <para>R hits R,Incapable.  S hits S,Incapable.</para>
+            <para>: Any: match any configuration in the target.</para>
+            <para>Everything hits everything.</para>
+            <para>extranFragsOk            : Extraneous frags tolerated in an exact full str</para>
+            <para>: (mol or rxn) search.</para>
+            <para>extranFragsOkIfRxn       : Like the previous, but only applies when target is</para>
+            <para>: rxn.</para>
+            <para>findChargedHet           : Query's uncharged heteroatoms hits any charge.</para>
+            <para>findChargedCarbon        : Query's uncharged carbons hits any charge.</para>
+            <para>findIsotopes             : Unspecified isotopy hits specified isotopy</para>
+            <para>: (normally the case).</para>
+            <para>findRadicals             : Unspecified radical hits radical/carbene.</para>
+            <para>fragsCanOverlap          : If True, different frags in the query can map to</para>
+            <para>: the same atoms in the target.</para>
+            <para>fullStruct               : True iff Full str searching; False if SS.</para>
+            <para>genericsNotGeneric       : Causes query attributes to be compared literally.</para>
+            <para>: Includes: atom type (A,R,Q,M,L,EDG,Alkyl...); </para>
+            <para>: wild/flex charge; var bond order; rxn ctr type.</para>
+            <para>identityMode             : An exact comparison is done with the search.</para>
+            <para>ignoreCounterionsInQuery : Strip counterions/co-solvents from query before</para>
+            <para>: search.</para>
+            <para>implHMatchesSimple       : An implicit H in the query may not be mapped to</para>
+            <para>: a charged, isotopic, etc. hydrogen in the target; </para>
+            <para>: it matches a simple H only, implicit or explicit.</para>
+            <para>looseDelocalization      : Query is tweaked so delocalized circles only</para>
+            <para>: require unsaturated carbons.</para>
+            <para>plusSigns                : Plus signs in reactions imply adjacent query</para>
+            <para>: fragments reside in different target fragments.</para>
+            <para>relativeTetStereo        : T if relative tet stereo search mode.</para>
+            <para>tautomeric               : Tautomeric search mode.</para>
+            <para>tetrahedralStereo        : Includes the tetrahedral stereocenter.</para>
+            <para>: The allowed values are: Same, Identity, Either or Any.</para>
+            <para>: Same: match the target exactly.</para>
+            <para>R hits R,Incapable.  S hits S,Incapable.</para>
+            <para>: Identity: Each type hits only itself.</para>
+            <para>R hits only R, Unspecified only </para>
+            <para>Unspecified, etc.</para>
+            <para>: Either: match same or opposite configuration at</para>
+            <para>the center of the target.</para>
+            <para>R and S both hit R, S, or Incapable.</para>
+            <para>: Any: match any target. Everything hits everything.</para>
+            <para>useRxnCenters            : For a reaction query, limit the generated hits</para>
+            <para>: by matching the reaction centers between the</para>
+            <para>: query and target.</para>
+            <para>maxHits                  : Limit the max hits.</para>
+            <para>timeout                  : Time out for each single search, in milliseconds.</para>
+            <para></para>
+            <para>*</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchOptions.#ctor">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.SearchQuery">
+            
+            <summary>
+             <para>class of SearchQuery</para>
+            <para></para>
+            <para></para>
+            <para>List all atom-by-atom map from this StructureData to "target" StructureData.</para>
+            <para>If any hit found, it returns true, else return false.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchQuery.#ctor(CambridgeSoft.ChemScript14.ChemicalData,CambridgeSoft.ChemScript14.SearchOptions)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchQuery.#ctor(CambridgeSoft.ChemScript14.ChemicalData)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchQuery.AtomByAtomSearch(CambridgeSoft.ChemScript14.ChemicalData,System.Int32)">
+            
+            <summary>
+             <para>AtomByAtomSearch</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchQuery.AtomByAtomSearch(CambridgeSoft.ChemScript14.ChemicalData)">
+            
+            <summary>
+             <para>AtomByAtomSearch</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.SearchQuery.GetAtomByAtomMap(System.Int32)">
+            
+            <summary>
+             <para>Get Atom By AtomMap with the Atom No</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.StringVector.StringVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.StructureData">
+            
+            <summary>
+             <para>Class of StructureData. </para>
+            <para></para>
+            <para></para>
+            <para>If more than one fragments needs to be added to the StructureData,</para>
+            <para>use JoinFragments() method to add extra structures/fragments.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.FindBond(CambridgeSoft.ChemScript14.Atom,CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Find the bond between a1 and a2</para>
+            <para></para>
+             <para>Find the bond between two atoms whose atom IDs are id1 and id2</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.FindBond(System.Int32,System.Int32)">
+            
+            <summary>
+             <para>Find the bond between a1 and a2</para>
+            <para></para>
+             <para>Find the bond between two atoms whose atom IDs are id1 and id2</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.LoadFile(System.String,System.String)">
+            
+            <summary>
+             <para>Load a structure data from a file.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.LoadFile(System.String)">
+            
+            <summary>
+             <para>Load a structure data from a file.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.LoadData(System.String,System.String)">
+            
+            <summary>
+             <para>Load a structure data from a string.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.LoadData(System.String)">
+            
+            <summary>
+             <para>Load a structure data from a string.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.MostCommonStructure(CambridgeSoft.ChemScript14.StructureData,CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Find the most common part of two given StructureData.</para>
+            <para>This method returns the common part as a new StructureData without atom maps.</para>
+            <para>If you want to get maps, you have to create a LargestCommonSubstructure object.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.MostCommonStructure(CambridgeSoft.ChemScript14.StructureData,CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Find the most common part of two given StructureData.</para>
+            <para>This method returns the common part as a new StructureData without atom maps.</para>
+            <para>If you want to get maps, you have to create a LargestCommonSubstructure object.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ReadFile(System.String,System.String)">
+            
+            <summary>
+             <para>Loads a file into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ReadFile(System.String)">
+            
+            <summary>
+             <para>Loads a file into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ReadData(System.String,System.String)">
+            
+            <summary>
+             <para>Reads string data into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ReadData(System.String)">
+            
+            <summary>
+             <para>Reads string data into this StructureData or ReactionData object.</para>
+            <para>If *format* parameter is set, the load will be faster.  Otherwise, it will guess the type and a result mime type will be returned.</para>
+            <para>*format* can be a full mime type, or the second part of a mime type (e.g. "cdx" short for "chemical/x-cdx").</para>
+            <para>Call StructureData.MimeTypes() to list all supported file formats.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.#ctor">
+            
+            <summary>
+             <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ContainsAtom(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Test if this StructureData/ReactionData contains Atom "a"</para>
+            <para>>>> m = StructureData.LoadData('CCCC')</para>
+            <para>>>> m.ContainsAtom(m.Atoms[2])</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CreateAtom(System.String,CambridgeSoft.ChemScript14.Point,System.Int32)">
+            
+            <summary>
+             <para>Create an atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CreateAtom(System.String,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Create an atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CreateAtom(System.String)">
+            
+            <summary>
+             <para>Create an atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.RemoveAtom(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Remove an atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ResetAtomIDs">
+            
+            <summary>
+             <para>Reset atom ID.  When some atoms are removed, the atom IDs are not continuous,</para>
+            <para>this method must be called to reassign a continuous IDs.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ContainsBond(CambridgeSoft.ChemScript14.Bond)">
+            
+            <summary>
+             <para>Test if this StructureData/ReactionData contains Bond "b"</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CreateBond(CambridgeSoft.ChemScript14.Atom,CambridgeSoft.ChemScript14.Atom,CambridgeSoft.ChemScript14.BondOrder)">
+            
+            <summary>
+             <para>Create an Bond</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CreateBond(CambridgeSoft.ChemScript14.Atom,CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Create an Bond</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.RemoveBond(CambridgeSoft.ChemScript14.Bond,System.Boolean)">
+            
+            <summary>
+             <para>Remove a bond</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.RemoveBond(CambridgeSoft.ChemScript14.Bond)">
+            
+            <summary>
+             <para>Remove a bond</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Clear">
+            
+            <summary>
+             <para>Remove everything from this object</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Clone">
+            
+            <summary>
+             <para>Get a clone of this mol</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ClearZCoordinates">
+            
+            <summary>
+             <para>Set all Z coordinates to 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.GetBound">
+            
+            <summary>
+             <para>Get the bound of this StructureData.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.TranslateCoordinates(CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Translate all atom positions by offset</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CountAtoms(System.String)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+             <para>Count the number of atoms with a given atomic number (element)</para>
+            <para>If no atomic number is specified, then the total number of all atoms is returned.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CountAtoms(System.Int32)">
+            
+            <summary>
+             <para></para>
+            <para></para>
+             <para>Count the number of atoms with a given atomic number (element)</para>
+            <para>If no atomic number is specified, then the total number of all atoms is returned.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CountAtoms">
+            
+            <summary>
+             <para></para>
+            <para></para>
+             <para>Count the number of atoms with a given atomic number (element)</para>
+            <para>If no atomic number is specified, then the total number of all atoms is returned.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.List(System.Boolean,System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>list atoms and/or bonds in this StructureData</para>
+            <para>Because ChemScript.dll is native code, if you want to print messages out while debugging .NET code, </para>
+            <para>you need to check "Enable unmanaged code debugging" in the Debug tab of the project properties.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.List(System.Boolean,System.Boolean)">
+            
+            <summary>
+             <para>list atoms and/or bonds in this StructureData</para>
+            <para>Because ChemScript.dll is native code, if you want to print messages out while debugging .NET code, </para>
+            <para>you need to check "Enable unmanaged code debugging" in the Debug tab of the project properties.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.List(System.Boolean)">
+            
+            <summary>
+             <para>list atoms and/or bonds in this StructureData</para>
+            <para>Because ChemScript.dll is native code, if you want to print messages out while debugging .NET code, </para>
+            <para>you need to check "Enable unmanaged code debugging" in the Debug tab of the project properties.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.List">
+            
+            <summary>
+             <para>list atoms and/or bonds in this StructureData</para>
+            <para>Because ChemScript.dll is native code, if you want to print messages out while debugging .NET code, </para>
+            <para>you need to check "Enable unmanaged code debugging" in the Debug tab of the project properties.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.IsPlanarStructure(System.Boolean,System.Double)">
+            
+            <summary>
+             <para>Test whether this is a 2D structure.  </para>
+            <para>If "fast" is set to True, check if the atoms have Z coordinate.</para>
+            <para>If "fast" is set to False, check if the atoms lie in a plane.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.IsPlanarStructure(System.Boolean)">
+            
+            <summary>
+             <para>Test whether this is a 2D structure.  </para>
+            <para>If "fast" is set to True, check if the atoms have Z coordinate.</para>
+            <para>If "fast" is set to False, check if the atoms lie in a plane.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.IsPlanarStructure">
+            
+            <summary>
+             <para>Test whether this is a 2D structure.  </para>
+            <para>If "fast" is set to True, check if the atoms have Z coordinate.</para>
+            <para>If "fast" is set to False, check if the atoms lie in a plane.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CleanupStructure(System.Boolean)">
+            
+            <summary>
+             <para>Convert this structure to a 2D representation.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CleanupStructure">
+            
+            <summary>
+             <para>Convert this structure to a 2D representation.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CleanupStructure(CambridgeSoft.ChemScript14.AtomList,System.Boolean)">
+            
+            <summary>
+             <para>Convert this structure to a 2D representation.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.CleanupStructure(CambridgeSoft.ChemScript14.AtomList)">
+            
+            <summary>
+             <para>Convert this structure to a 2D representation.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ScaffoldCleanup(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>This method can be used to exert precise control over the atom</para>
+            <para>positioning within a scaffold subset of a chemical structure.</para>
+            <para>The ScaffoldCleanup is a three-step procedure:</para>
+            <para>1. An overlay of the structure is performed onto the scaffold.</para>
+            <para>2. Atoms in the structure are given the coordinates of the corresponding</para>
+            <para>atoms in the scaffold structure.</para>
+            <para>3. A structure-cleanup algorithm is applied to the remaining atoms in the</para>
+            <para>structure which do not correspond to atoms in the scaffold.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.JoinFragments(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Add StructureData "m" to this StructureData</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Neutralize">
+            
+            <summary>
+             <para>Adds and removes protons so as to neutralize charged acidic and basic atoms</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ConvertToDelocBondRep">
+            
+            <summary>
+             <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ConvertToFixedBondRep(System.Int32,System.Int32)">
+            
+            <summary>
+             <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ConvertToFixedBondRep(System.Int32)">
+            
+            <summary>
+             <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ConvertToFixedBondRep">
+            
+            <summary>
+             <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Overlay(CambridgeSoft.ChemScript14.StructureData,System.Int32)">
+            
+            <summary>
+             <para>Adjust the position and orientation of the structure in order to achieve</para>
+            <para>the best possible overlay of the structure onto the target (or scaffold).</para>
+            <para>This is a "rigid-body" overlay.  During this procedure, the internal</para>
+            <para>geometry of the structure is not changed.</para>
+            <para>If the overlay results in a flip of the structure, then the bond graphical</para>
+            <para>stereochemistry is adjusted so that the atom stereochemistry will not be</para>
+            <para>changed by the overlay procedure.</para>
+            <para>This procedure can be used for 2D or 3D structures.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Overlay(CambridgeSoft.ChemScript14.StructureData)">
+            
+            <summary>
+             <para>Adjust the position and orientation of the structure in order to achieve</para>
+            <para>the best possible overlay of the structure onto the target (or scaffold).</para>
+            <para>This is a "rigid-body" overlay.  During this procedure, the internal</para>
+            <para>geometry of the structure is not changed.</para>
+            <para>If the overlay results in a flip of the structure, then the bond graphical</para>
+            <para>stereochemistry is adjusted so that the atom stereochemistry will not be</para>
+            <para>changed by the overlay procedure.</para>
+            <para>This procedure can be used for 2D or 3D structures.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.GeometricCenter">
+            
+            <summary>
+             <para>Returns the unweighted geometric center of all atoms</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.MoveCenterToOrigin">
+            
+            <summary>
+             <para>Center the structure around the origin</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Rotate(CambridgeSoft.ChemScript14.Vector,System.Double)">
+            
+            <summary>
+             <para>Rotate all atoms about vector "axis" at a angle of "degree"</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.SplitFragments">
+            
+            <summary>
+             <para>Split fragments into a list of separate StructureData objects</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.Topology">
+            
+            <summary>
+             <para>Get Topology object of this mol.  You can use Topology object to analyze molecular topology.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ChemicalName(System.Boolean)">
+            
+            <summary>
+             <para>Return the chemical name.  It equals WriteData('name').</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.ChemicalName">
+            
+            <summary>
+             <para>Return the chemical name.  It equals WriteData('name').</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.MergeFragments(CambridgeSoft.ChemScript14.StructureDataList)">
+            
+            <summary>
+             <para>Merge a mol array into a new StructureData</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.BondedAtomsOf(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get bonded atoms of an Atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.BondedBondsOf(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get bonded bonds of an Atom</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.DetectAtomStereoCIP">
+            
+            <summary>
+             <para>Detect atoms' CIP stereochemistry.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.DetectBondStereoCIP">
+            
+            <summary>
+             <para>Detect bonds' CIP stereochemistry.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.AmbiguousStereoAtoms">
+            
+            <summary>
+             <para>Get AmbiguousStereoAtoms.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.NormalizeStructure(CambridgeSoft.ChemScript14.NormOptions,System.Int32)">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.NormalizeStructure(CambridgeSoft.ChemScript14.NormOptions)">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.StructureData.NormalizeStructure">
+            
+            <summary>
+             <para>Convert differently drawn representations of the same structure into</para>
+            <para>a single normalized form.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.Atoms">
+            
+            <summary>
+             <para>Get a list of all the atoms.  It has an alias call "Atoms".</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.Bonds">
+            
+            <summary>
+             <para>Get a list of all the bonds.</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.HasCoordinates">
+            
+            <summary>
+             <para>Test whether the atoms have unique coordinates.</para>
+            <para>This function returns false if all atoms have the same coordinates</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.HasZCoordinates">
+            
+            <summary>
+             <para>Test whether all atoms' Z coordinates are 0. </para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.AverageMass">
+            
+            <summary>
+             <para>Get the average mass</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.ExactMass">
+            
+            <summary>
+             <para>Get the exact mass</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.Weight">
+            
+            <summary>
+             <para>Get the mol weight</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.PartitionCoefficient">
+            
+            <summary>
+             <para>Compute partition coefficient (Log P) using ClogP</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.Refractivity">
+            
+            <summary>
+             <para>Compute StructureData refractivity using ClogP</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.HasCharges">
+            
+            <summary>
+             <para>HasCharges</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.TotalCharge">
+            
+            <summary>
+             <para>Get the total charge of the StructureData</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.TotalNegativeCharges">
+            
+            <summary>
+             <para>Get the total negative charges of the StructureData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.TotalPositiveCharges">
+            
+            <summary>
+             <para>Get the total positive charges of the StructureData</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.LonePairAtoms">
+            
+            <summary>
+             <para>Returns the atoms with lone pairs to donate.  Excludes cations.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.AtomsWithVacantPiOrbitals">
+            
+            <summary>
+             <para>Returns the atoms with vacant low-energy orbitals that might readily accept an electron pair.  Excludes anions.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.HydrogenAcceptors">
+            
+            <summary>
+             <para>Get hydrogen-bond acceptor atoms as a list</para>
+            <para>A hydrogen-bond acceptor atom is defined as an O, N or F atom that is not a cation,</para>
+            <para>and is not an sp3 atom in an ester or amide.</para>
+            <para>Examples of acceptors:</para>
+            <para>MeCHO  MeOH		MeC(=O)Me  R3N  R2NH	MeS(-)  HO(-)</para>
+            <para>Examples of non-acceptors:</para>
+            <para>MeSH	B(-)F4			HCl      MeC(=S)OH   MeCl</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.HydrogenDonors">
+            
+            <summary>
+             <para>Get hydrogen-bond donor atoms as a list</para>
+            <para>A hydrogen-bond donor atom is defined as an O,N,S or F atom bearing one or more</para>
+            <para>hydrogen atoms, and that is not negatively charged.</para>
+            <para>Examples of donors:	</para>
+            <para>--OH  --NHR  --SH	==O(+)H</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.ElectronDonatingAtoms">
+            
+            <summary>
+             <para>Get the central atoms in electron-donating groups as a list</para>
+            <para>1. --M					where M is an element more electropositive than hydrogen.</para>
+            <para>Principal instances include:</para>
+            <para>--MgX</para>
+            <para>--SiR3</para>
+            <para>Alkyl is also electron donating to another carbon, and especially if the latter is</para>
+            <para>unsaturated.  (Unfortunately, we don't know in advance if that is the case.)</para>
+            <para>2. --X(-)				Anions</para>
+            <para>For example:</para>
+            <para>--O(-)			oxide</para>
+            <para>--N(-)			amide</para>
+            <para>--S(-)</para>
+            <para>3. --Y					where Y is an sp3-like non-halogen with a lone pair to donate.</para>
+            <para>Principal instances include:</para>
+            <para>--OCH3			methoxy</para>
+            <para>--NH2			amino</para>
+            <para>4. --C(C2)R			isopropyl or t-butyl groups are e-donating.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.ElectronWithdrawingAtoms">
+            
+            <summary>
+             <para>Get the central atoms in electron-withdrawing groups as a list</para>
+            <para>1. --X=Y				where X is an element more electronegative than hydrogen,</para>
+            <para>and Y is an element more electronegative than hydrogen (inc. C).</para>
+            <para>Principal instances include:</para>
+            <para>--C=[N,O]		Carbon multiply bonded to an electronegative element.</para>
+            <para>--N=[N,O]		Nitrogen multiply bonded to an electronegative element (Eg. NO2).</para>
+            <para>--S=O			Sulfur multiply bonded to an electronegative element.</para>
+            <para>--Arom			Aromatic systems are electron-withdrawing.</para>
+            <para>2. --CX2R				Sp3 carbon substituted by two or more electronegative elements.</para>
+            <para>Principal instances include:</para>
+            <para>--CF2H			Fluorinated carbons.</para>
+            <para>--C(OMe)2		Ketals/acetals.</para>
+            <para>--C(NMe)2</para>
+            <para>3. --X(+)				Cations</para>
+            <para>Examples being:</para>
+            <para>--NR3(+)		ammonium</para>
+            <para>--OR2(+)		oxonium</para>
+            <para>--SR2(+)</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.MOverZ">
+            
+            <summary>
+             <para>Get the mol m/z report</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.ElementalAnalysis">
+            
+            <summary>
+             <para>Get the mol elemental analysis</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.StructureData.Inchi">
+            
+            <summary>
+             <para>Return the InChI string.</para>
+            <para>See http://www.iupac.org/inchi/ for more information</para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.StructureDataList.StructureDataListEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.ClusterCount(System.Int32)">
+            
+            <summary>
+             <para>Get ClusterCount.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.ShapeAttribute(System.Int32)">
+            
+            <summary>
+             <para>Get ShapeAttribute.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.ValenceConnectivityIndex(System.Int32)">
+            
+            <summary>
+             <para>Get ValenceConnectivityIndex.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.NumOfValenceElectrons(System.Int32)">
+            
+            <summary>
+             <para>Get NumOfValenceElectrons.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.ValenceDegree(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get ValenceDegree.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.Eccentricity(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get Eccentricity.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.Degree(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get Degree.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.Valence(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get Valence.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.NumOfHydrogens(CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get NumOfHydrogens.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.Distance(CambridgeSoft.ChemScript14.Atom,CambridgeSoft.ChemScript14.Atom)">
+            
+            <summary>
+             <para>Get Distance.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Topology.DistanceMatrix">
+            
+            <summary>
+             <para></para>
+            <para></para>
+             <para>Get DistanceMatrix.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.WienerIndex">
+            
+            <summary>
+             <para>WienerIndex is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.BalabanIndex">
+            
+            <summary>
+             <para>BalabanIndex is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.TopologicalIndex">
+            
+            <summary>
+             <para>TopologicalIndex is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.Diameter">
+            
+            <summary>
+             <para>Diameter is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.Radius">
+            
+            <summary>
+             <para>Radius is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.ShapeCoefficient">
+            
+            <summary>
+             <para>ShapeCoefficient is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.SumOfDegrees">
+            
+            <summary>
+             <para>SumOfDegrees is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.SumOfValenceDegrees">
+            
+            <summary>
+             <para>SumOfValenceDegrees is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.TotalConnectivity">
+            
+            <summary>
+             <para>TotalConnectivity is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.TotalValenceConnectivity">
+            
+            <summary>
+             <para>TotalValenceConnectivity is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.PolarSurfaceArea">
+            
+            <summary>
+             <para>PolarSurfaceArea is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.NumOfRotatableBonds">
+            
+            <summary>
+             <para>NumOfRotatableBonds is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.NumOfTerminalBonds">
+            
+            <summary>
+             <para>NumOfTerminalBonds is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.NumOfRingBonds">
+            
+            <summary>
+             <para>NumOfRingBonds is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.NumOfChainBonds">
+            
+            <summary>
+             <para>NumOfChainBonds is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.NumOfLinkingChainBonds">
+            
+            <summary>
+             <para>NumOfLinkingChainBonds is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Get NumOfLinkingChainBonds.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Topology.CyclomaticNumber">
+            
+            <summary>
+             <para>CyclomaticNumber is READONLY.</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.#ctor(CambridgeSoft.ChemScript14.XYZ)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.#ctor(System.Double,System.Double,System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.#ctor(System.Double,System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.#ctor(System.Double)">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.#ctor">
+            
+            <summary>
+             <para>Copy constructor</para>
+            <para></para>
+            <para></para>
+            <para></para>
+             <para>Constructor.  Arguments x, y and z are optional, and the default of values are 0</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.Normalize">
+            
+            <summary>
+             <para>Normalize - make its length 1.0 ( |v| == 1.0 )</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.DotProduct(CambridgeSoft.ChemScript14.Vector)">
+            
+            <summary>
+             <para>Compute the dot product of two vectors: myself . p</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.CrossProduct(CambridgeSoft.ChemScript14.Vector)">
+            
+            <summary>
+             <para>Compute the cross product of two vectors: myself x p</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.Angle(CambridgeSoft.ChemScript14.Vector,CambridgeSoft.ChemScript14.Vector)">
+            
+            <summary>
+             <para>Compute the angle defined by two vectors (in degrees)</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.NormalVector(CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point,CambridgeSoft.ChemScript14.Point)">
+            
+            <summary>
+             <para>Compute a normalized perpendicular vector to a plane.  The plane id defined by p1--p2--p3</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="M:CambridgeSoft.ChemScript14.Vector.ToPoint">
+            
+            <summary>
+             <para>Create a Point using this vector from the origin</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="P:CambridgeSoft.ChemScript14.Vector.Length">
+            
+            <summary>
+             <para>Compute the vector length ( |v| )</para>
+            <para></para>
+            <para></para>
+            <para></para>
+            </summary>
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.VectorIntVector.VectorIntVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:CambridgeSoft.ChemScript14.VectorOfStructVector.VectorOfStructVectorEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+    </members>
+</doc>
